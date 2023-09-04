@@ -3237,7 +3237,7 @@ select, textarea {
 			#footer .col-6-footer-left {
 				text-align: left;
 				padding-left: 4rem;
-				transform: translateY(35%);
+				margin: auto 0;
 			}
 
 	}
