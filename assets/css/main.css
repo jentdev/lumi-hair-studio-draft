@@ -3699,7 +3699,24 @@ li.nav-logo {
 
 	#nav-check:checked ~ .nav-overlay {
 		display: block;
-	}
+	}	
+}
 
-	
+.confirmation-body {
+	height: 100vh;
+}
+
+#header.confirmation-header {
+	padding-left: 2rem;
+}
+
+#header.confirmation-header div#data,
+#header.confirmation-header p {
+	text-align: left;
+	color: #666;
+}
+
+#header.confirmation-header b {
+	font-weight: bold;
+	color: #666;
 }
