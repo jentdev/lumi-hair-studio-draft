@@ -2,6 +2,7 @@ const json = localStorage.getItem('form');
 const obj = JSON.parse(json);
 
 for (key in obj) {
+    extractDate(key, obj);
     const markup = `
         <div><span><b>${key}:</b> ${obj[key]}</span></div>
     `;
