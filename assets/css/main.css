@@ -2917,7 +2917,7 @@ select, textarea {
 	#header {
 		top: -5rem;
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		background-color: #dba17b;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #f1f1ba 5%, #dba17b 30%, #e7d7be);
@@ -3702,12 +3702,14 @@ li.nav-logo {
 	}	
 }
 
-.confirmation-body {
+body.confirmation-body {
 	height: 100vh;
 }
 
-#header.confirmation-header {
-	padding-left: 2rem;
+#header.confirmation-header,
+#header.confirmation-header::after {
+	margin-top: 2rem;
+	background: none;
 }
 
 #header.confirmation-header div#data,
@@ -3716,7 +3718,31 @@ li.nav-logo {
 	color: #666;
 }
 
+#header.confirmation-header div.add-bg {
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: .5rem;
+	padding: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
 #header.confirmation-header b {
 	font-weight: bold;
 	color: #666;
+}
+
+#confirmation-bg {
+		background-color: #dba17b;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed,							fixed,							fixed;
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #f1f1ba 5%, #dba17b 30%, #e7d7be);
+		background-position: top left,						center center,					center center;
+		background-size: auto,							cover,							cover;
+		}
+
+@media (min-width: 981px) {
+	#header.confirmation-header {
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
 }
