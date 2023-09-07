@@ -3231,13 +3231,16 @@ select, textarea {
 	@media (min-width: 981px) {
 		/* Footer */
 			#footer .col-6-footer-right {
-			text-align: right;
-			padding-right: 4rem;
+				text-align: right;
+				padding-right: 4rem;
 			}
 			#footer .col-6-footer-left {
 				text-align: left;
 				padding-left: 4rem;
 				margin: auto 0;
+			}
+			#header div.inner {
+				padding-top: 2rem;
 			}
 
 	}
@@ -3358,6 +3361,10 @@ select, textarea {
 
 			#two {
 				text-align: center;
+			}
+
+			.col-12-medium .major ~ p {
+				text-align: left;
 			}
 
 	}
