@@ -3506,7 +3506,6 @@ select, textarea {
 				width: 100% !important;
 			}
 	}
-
 /* XXSmall */
 
 	@media screen and (max-width: 320px) {
@@ -3751,5 +3750,20 @@ body.confirmation-body {
 	#header.confirmation-header {
 		margin-left: 3rem;
 		margin-right: 3rem;
+	}
+}
+
+
+@media screen and (max-width: 399px) {
+	ul.nav-bar {
+		padding-right: 0;
+	}
+	.nav-menu li {
+		padding-left: .0;
+		padding-right: 0;
+	}
+	#hamburger ul.nav-bar .nav-last {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
